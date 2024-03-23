@@ -4,7 +4,7 @@ sizeSdyni = size(Sdyni);
 sizeSdynj = size(Sdynj);
 sizeSdynk = size(Sdynk);
 
-c_step = 0.001;
+c_step = 0.1;
 
 g = 1;
 h = 1;

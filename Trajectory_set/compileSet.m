@@ -18,29 +18,14 @@ S = zeros([len 6]);
 
 for a = 1:1:len
     if (a <= sizex(1))
-        S(a,1) = Sx(a,1);
-        S(a,2) = Sx(a,2);
-        S(a,3) = Sx(a,3);
-        S(a,4) = Sx(a,4);
-        S(a,5) = Sx(a,5);
-        S(a,6) = Sx(a,6);
+        S(a,:) = Sx(a,:);
     end
     if (a > sizex(1)) && (a <= (sizex(1) + sizey(1)))
         b = a - sizex(1);
-        S(a,1) = Sx(b,1);
-        S(a,2) = Sx(b,2);
-        S(a,3) = Sx(b,3);
-        S(a,4) = Sx(b,4);
-        S(a,5) = Sx(b,5);
-        S(a,6) = Sx(b,6);
+        S(a,:) = Sx(b,:);
     end
     if (a > (sizex(1) + sizex(1))) && (a <= (sizex(1) + sizey(1) + sizez(1)))
         c = a - (sizex(1) + sizey(1));
-        S(a,1) = Sx(c,1);
-        S(a,2) = Sx(c,2);
-        S(a,3) = Sx(c,3);
-        S(a,4) = Sx(c,4);
-        S(a,5) = Sx(c,5);
-        S(a,6) = Sx(c,6);
+        S(a,:) = Sx(c,:);
     end
 end

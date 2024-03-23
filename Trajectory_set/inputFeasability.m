@@ -25,7 +25,7 @@ for B = 4:1:b
     fa(1) = abs(B*(c(1)^(1-(2/B)))*(f(2)-i(2))*(B-1-c(1)*(B+1))/(Abnd*(1+c(1))^3));
     fa(2) = abs(B*(c(2)^(1-(2/B)))*(f(2)-i(2))*(B-1-c(2)*(B+1))/(Abnd*(1+c(2))^3));
     Cup = (f(1) - i(1))*(e / (abs(i(2) - f(2)) - e))^(1/B);
-    Clo = max(fa(1),fa(2));
+    Clo = max(fa);
     
     if Clo < Cup
         Sdyn(n,1) = B;
@@ -34,4 +34,3 @@ for B = 4:1:b
         n = n + 1;
     end
 end
-
