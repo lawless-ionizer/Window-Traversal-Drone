@@ -17,4 +17,4 @@ W = [W1;W2;W3;W4];
 
 S = compileSet(i,f,W,0,tf,e,Abnd,b,R);
 
-createGraph(i,f,tf,S);
+createGraph(i,f,tf,S,W);
